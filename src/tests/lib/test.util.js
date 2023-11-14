@@ -7,4 +7,20 @@ const timeOut = {
     oneSecond: 60000
 }
 
-module.exports = { timeOut, testConfig };
+const stateConfig = {
+    url: 'https://giphy.com',
+    users: [
+        {
+            type: 'basic',
+            userName: 'basic.user@gmail.com',
+            password: '**********'
+        },
+        {
+            type: 'advanced',
+            userName: 'advanced.user@gmail.com',
+            password: '**********'
+        }
+    ]
+}
+
+module.exports = { timeOut, testConfig, stateConfig };
